@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>test2</title>
+<a href="name.html">back to the canvas</a>
+<a href="text.html">to the text</a>
+<a href="index.html">RipX </a>
+</head>
+<body>
+
+<script>
+var fruits=[];let text, fLen, i,wd;
+fruits=["Banana","Orange","Apple","Mango"];
+
+function listing(){
+text="<ul>";
+for(i=0;i<fruits.length;i++){
+text +="<li>"+fruits[i]+"</li>";
+}
+text +="</ul>";
+document.getElementById("demo").innerHTML=text;
+}
+
+function addF(){
+wd=document.getElementById("addOne").value;
+fruits.push(wd);
+}
+
+</script>
+
+
+
+<style>
+ul{border-style:dashed;border-color:aqua;border-width:15px;
+padding:5px;width:30%;}
+li{padding-left:10px;border-style:dotted;border-color:green;border-width:3px}
+</style>
+<h2>JavaScript Arrays</h2>
+
+<input id="addOne" ondblclick="addF()">enter a fruit
+
+<p onclick="addF()">add fruit</p>
+
+<p id="demo" ></p>
+
+<ul class="tes">
+<li>Testing an unordered list</li>
+<li>Item number 2 in the list</li>
+</ul>
+<button onclick="listing()">button</button>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>text</title>
+<br><br>
+<a href="index.html">to the pics</a>
+<a href="fruit.html">fruit boys</a>
+<a href="name.html">Squares</a>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+#mon{background-color:red;}
+</style>
+</head>
+<body>
+<script>
+function fun1(){
+document.getElementById('jan').innerHTML='march';
+}
+function fun2(){
+document.getElementById('march').innerHTML='jan';
+
+
+}
+</script>
+<table>
+  <tr>
+    <th>
+    </th>
+    <th id="mon" title="It is MAAAAMM">stuff</th>
+  </tr>
+  <tr>
+    <td id='jan'>January</td>
+    <td onclick="fun1()">$100</td>
+    <td id='Mar'>March</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+
+</body>
+</html>
